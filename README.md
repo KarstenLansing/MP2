@@ -11,7 +11,6 @@ This project involves developing an AI program that can autonomously play a rogu
 - Numpy (for mathematical computations)
 
 1. Run the game environment with the AI:
-    ```bash gameTesting.sh
-    ```
+    ```bash gameTesting.sh ```
 
 2. The AI will start playing the game autonomously, making decisions to maximize the score by collecting coins.
