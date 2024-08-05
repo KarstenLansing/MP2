@@ -6,9 +6,10 @@ run_count=0
 
  
 # Loop through seed values from 1 to 777
+dir = pwd
 for seed in {1..100}; do
     # Run the game and capture the output
-    output=$(python /Users/karstenlansing/Downloads/MP2/run_game.py --seed $seed --speed 100)
+    output=$(python ${dir}run_game.py --seed $seed --speed 100)
     
     # Extract the percentage from the output using awk
     percentage=$(echo $output | awk -F 'Percentage:' '{print $2}' | awk '{print $1}')
